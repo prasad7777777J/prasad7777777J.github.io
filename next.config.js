@@ -1,8 +1,8 @@
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
-  basePath: '/Sai-Prasad-Kommineni.github.io',
-  assetPrefix: '/Sai-Prasad-Kommineni.github.io',
+  basePath: '',
+  assetPrefix: '',
   images: { unoptimized: true },
 };
 module.exports = nextConfig;

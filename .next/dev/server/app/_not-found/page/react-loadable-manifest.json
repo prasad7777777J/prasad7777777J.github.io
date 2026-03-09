@@ -1,0 +1,10 @@
+{
+  "[project]/components/CustomCursor.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/components/CustomCursor.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/node_modules_65193717._.js",
+      "static/chunks/components_CustomCursor_tsx_2d3c2b43._.js",
+      "static/chunks/components_CustomCursor_tsx_234c1e11._.js"
+    ]
+  }
+}

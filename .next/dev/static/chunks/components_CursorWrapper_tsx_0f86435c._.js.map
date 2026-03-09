@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/psai2/OneDrive/Desktop/My_Portfolio/components/CursorWrapper.tsx"],"sourcesContent":["\"use client\";\r\n\r\nimport dynamic from \"next/dynamic\";\r\n\r\nconst CustomCursor = dynamic(() => import(\"@/components/CustomCursor\"), { ssr: false });\r\n\r\nexport default function CursorWrapper() {\r\n  return <CustomCursor />;\r\n}"],"names":[],"mappings":";;;;;AAEA;;AAFA;;;AAIA,MAAM,eAAe,IAAA,6KAAO,EAAC;;;;;;IAA6C,KAAK;;KAAzE;AAES,SAAS;IACtB,qBAAO,6LAAC;;;;;AACV;MAFwB"}}]
+}
