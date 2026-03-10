@@ -16,10 +16,7 @@ const DELAY = "0.066s";
 const LERP_SPEED = 6; // higher = snappier, lower = more cinematic lag
 
 function getFramePath(i: number) {
-  const base = typeof window !== "undefined" && window.location.hostname !== "localhost"
-    ? "/Sai-Prasad-Kommineni.github.io"
-    : "";
-  return `${base}/sequence/frame_${i.toString().padStart(3, "0")}_delay-${DELAY}.webp`;
+  return `/sequence/frame_${i.toString().padStart(3, "0")}_delay-${DELAY}.webp`;
 }
 const FRAME_PATHS = Array.from({ length: TOTAL_FRAMES }, (_, i) => getFramePath(i));
 
