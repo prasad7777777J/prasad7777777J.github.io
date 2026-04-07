@@ -61,7 +61,7 @@ export default function About() {
 
         <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-start">
 
-          {/* Left — heading + bio */}
+          {/* Left – heading + bio */}
           <div>
             <motion.h2
               initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
@@ -83,18 +83,18 @@ export default function About() {
             >
               <p className="text-base md:text-lg leading-relaxed"
                 style={{ color: "var(--text-secondary)", fontWeight: 300 }}>
-                I'm a Data Scientist and Generative AI Consultant at J-Monk Devops, specialising in RAG pipelines, LLM fine-tuning, and autonomous AI agents. With a background in Computer Science from NIT Mizoram and an MS in Data Analytics at the University of Illinois Springfield, I combine rigorous engineering with cutting-edge AI research.
+                I&apos;m a Data Scientist and Generative AI Consultant at J-Monk DevOps, specialising in RAG pipelines, LLM fine-tuning, and autonomous AI agents. With a background in Computer Science from NIT Mizoram and an MS in Data Analytics at the University of Illinois Springfield, I combine rigorous engineering with cutting-edge AI research.
               </p>
               <p className="text-base md:text-lg leading-relaxed"
                 style={{ color: "var(--text-secondary)", fontWeight: 300 }}>
-                My work focuses on leveraging AWS cloud infrastructure and modern LLM tooling to solve complex real-world problems — from intelligent document processing to multi-agent orchestration systems.
+                My work spans AWS and Azure cloud infrastructure — from deploying fine-tuned LLMs on Azure VMs with FastAPI to building SageMaker-backed ML pipelines — solving complex real-world problems across healthcare, insurance, and FMCG domains.
               </p>
               <p className="text-base md:text-lg leading-relaxed"
                 style={{ color: "var(--text-secondary)", fontWeight: 300 }}>
-                Currently open to full-time Data Scientist, ML/AI Engineer, and Data Analytics roles across the USA.
+                Currently open to full-time AI Engineer, Data Scientist, ML Engineer, AI Architect, and Data Engineer roles across the USA.
               </p>
 
-              {/* Status + certs */}
+              {/* Status */}
               <div className="flex items-center gap-3 mt-2">
                 <span className="w-2 h-2 rounded-full animate-pulse" style={{ background: "var(--accent-lime)" }} />
                 <span className="text-sm" style={{ fontFamily: "var(--font-dm-mono)", color: "var(--accent-lime)" }}>
@@ -124,7 +124,7 @@ export default function About() {
             </motion.div>
           </div>
 
-          {/* Right — stat cards */}
+          {/* Right – stat cards */}
           <div className="grid grid-cols-2 gap-4 md:pt-4">
             {STATS.map((s, i) => (
               <motion.div
@@ -145,7 +145,6 @@ export default function About() {
                     {s.sub}
                   </div>
                 </div>
-                {/* Lime accent line */}
                 <div className="h-[1px] w-8 mt-auto" style={{ background: "var(--accent-lime)" }} />
               </motion.div>
             ))}

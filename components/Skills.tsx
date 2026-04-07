@@ -13,31 +13,31 @@ const SKILL_GROUPS = [
     icon: "🤖",
     title: "Machine Learning & AI",
     accent: "#60A5FA",
-    skills: ["TensorFlow", "PyTorch", "Scikit-learn", "XGBoost", "Computer Vision", "OpenCV"],
+    skills: ["TensorFlow", "PyTorch", "Scikit-learn", "XGBoost", "H2O Driverless AI", "Computer Vision", "CNNs", "Transformers", "GANs"],
   },
   {
     icon: "🚀",
     title: "NLP & Generative AI",
     accent: "#A78BFA",
-    skills: ["LangChain", "LangGraph", "RAG Systems", "LLM Fine-tuning", "Vector DBs", "Prompt Engineering"],
+    skills: ["LangChain", "LangGraph", "RAG Systems", "LLM Fine-tuning (LoRA-PEFT)", "Prompt Engineering", "Stable Diffusion", "DALL-E", "Multi-Agent Systems"],
   },
   {
     icon: "☁️",
     title: "Cloud & Engineering",
     accent: "#FF3B2F",
-    skills: ["AWS (S3, Lambda, SageMaker)", "Docker", "FastAPI", "REST APIs", "CI/CD", "Airflow"],
+    skills: ["AWS (S3, SageMaker, Comprehend)", "Azure OpenAI", "Azure ML", "Azure Cognitive Services", "Azure Data Lake", "Azure Form Recognizer", "FastAPI", "REST APIs", "Streamlit", "Postman"],
   },
   {
     icon: "🗄️",
-    title: "Databases & Storage",
+    title: "Databases & Vector Stores",
     accent: "#34D399",
-    skills: ["PostgreSQL", "MySQL", "ChromaDB", "Pinecone", "Vector Stores", "Data Modelling"],
+    skills: ["MySQL", "XAMPP", "Pinecone", "FAISS", "Redis", "Astra DB", "Vector Stores", "Data Modelling"],
   },
   {
     icon: "📊",
     title: "Analytics & Visualisation",
     accent: "#F59E0B",
-    skills: ["Power BI", "Matplotlib", "Seaborn", "Statistical Analysis", "A/B Testing", "Streamlit"],
+    skills: ["Tableau", "Power BI", "Matplotlib", "Seaborn", "Statistical Analysis", "Time-Series Forecasting", "Streamlit"],
   },
 ];
 
@@ -45,7 +45,7 @@ const CERTS = [
   {
     title: "NVIDIA Certified Associate",
     sub: "Generative AI LLMs",
-    accent: "#76b900", // NVIDIA green
+    accent: "#76b900",
   },
   {
     title: "Academy Accreditation",

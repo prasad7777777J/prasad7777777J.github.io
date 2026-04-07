@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const SOCIALS = [
   { label: "LinkedIn", href: "https://www.linkedin.com/in/sai-prasad-kommineni-01aa51168/" },
   { label: "GitHub",   href: "https://github.com" },
-  { label: "Email",    href: "mailto:psai28071@gmail.com" },
+  { label: "Email",    href: "mailto:psai28073@gmail.com" },
 ];
 
 export default function Footer() {
@@ -23,12 +23,12 @@ export default function Footer() {
             className="inline-block text-[10px] tracking-[0.3em] uppercase mb-8 px-3 py-1 rounded-full"
             style={{ fontFamily: "var(--font-dm-mono)", color: "var(--accent-lime)", border: "1px solid rgba(212,255,77,0.3)", background: "rgba(212,255,77,0.05)" }}
           >
-            Let's Connect
+            Let&apos;s Connect
           </span>
 
           <h2 className="font-black leading-[0.9] tracking-tight max-w-4xl"
             style={{ fontFamily: "var(--font-syne)", fontSize: "clamp(3rem, 9vw, 8rem)", color: "var(--text-primary)" }}>
-            Let's build
+            Let&apos;s build
             <br />
             <span style={{ WebkitTextStroke: "1px rgba(240,237,232,0.2)", WebkitTextFillColor: "transparent" }}>
               something great.
@@ -36,13 +36,13 @@ export default function Footer() {
           </h2>
 
           <p className="mt-6 text-base max-w-md" style={{ color: "var(--text-secondary)", fontWeight: 300 }}>
-            Open to Data Scientist, ML/AI Engineer, Data Analytics, and Data Engineering roles across the USA. Let's discuss how I can contribute to your team.
+            Open to AI Engineer, Data Scientist, ML Engineer, AI Architect, and Data Engineer roles across the USA. Let&apos;s discuss how I can contribute to your team.
           </p>
 
           {/* CTA row */}
           <div className="flex flex-wrap gap-4 justify-center mt-10">
             <motion.a
-              href="mailto:psai28071@gmail.com"
+              href="mailto:psai28073@gmail.com"
               whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}
               className="inline-flex items-center gap-3 px-10 py-5 rounded-full text-sm tracking-widest uppercase pointer-events-auto"
               style={{ fontFamily: "var(--font-dm-mono)", background: "var(--accent-lime)", color: "#000", fontWeight: 500 }}
@@ -62,7 +62,7 @@ export default function Footer() {
           </div>
 
           <p className="mt-5 text-xs" style={{ fontFamily: "var(--font-dm-mono)", color: "var(--text-secondary)" }}>
-            or call · 217 572 0681
+            or call · +1 (217) 572-0681
           </p>
         </motion.div>
       </div>
