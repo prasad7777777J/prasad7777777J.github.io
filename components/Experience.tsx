@@ -9,7 +9,7 @@ const EXPERIENCE = [
     company: "J-Monk DevOps",
     location: "Remote, United States",
     period: "Aug 2024 – Present",
-    type: "Full-time",
+    type: "Internship",
     accent: "#D4FF4D",
     bullets: [
       "Instructed Data Science and Generative AI training classes, delivering curriculum covering ML fundamentals, deep learning, and LLMs.",
