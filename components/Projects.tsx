@@ -5,55 +5,81 @@ import { motion } from "framer-motion";
 const PROJECTS = [
   {
     id: "01",
-    title: "RAG Pipeline",
-    subtitle: "Generative AI · Production System",
-    tags: ["Python", "LangChain", "AWS", "ChromaDB", "FastAPI"],
+    title: "SQL AI Dashboard",
+    subtitle: "Generative AI · Natural Language to SQL",
+    tags: ["Python", "LangChain", "OpenAI", "SQLite", "Streamlit"],
     description:
-      "End-to-end Retrieval-Augmented Generation system. Combines semantic search with LLM generation to deliver context-aware answers over enterprise knowledge bases. Achieved 94%+ faithfulness via RAGAS evaluation.",
+      "Conversational SQL dashboard powered by an LLM — users ask questions in plain English and receive live query results, charts, and data insights without writing a single line of SQL.",
     accent: "#D4FF4D",
     year: "2024",
-    link: "https://www.linkedin.com/in/sai-prasad-kommineni-01aa51168/",
+    link: "https://github.com/prasad7777777J/Gen-AI/tree/main/sql-ai-dashboard",
     size: "large",
-    badge: "⚡ Production · RAG",
+    badge: "⚡ NL2SQL · Gen AI",
   },
   {
     id: "02",
-    title: "LLM Fine-Tuning",
-    subtitle: "NLP · Model Training",
-    tags: ["PyTorch", "HuggingFace", "LoRA", "PEFT", "AWS"],
+    title: "Data Analyst Agent",
+    subtitle: "Autonomous Agent · Data Analysis",
+    tags: ["Python", "LangChain", "OpenAI", "Pandas", "FastAPI"],
     description:
-      "Fine-tuned large language models for domain-specific tasks using LoRA and PEFT techniques, achieving significant accuracy gains on specialised industry datasets.",
+      "Agentic data analyst that autonomously plans analysis steps, writes and executes code, interprets results, and delivers structured insights — no human prompting in the loop.",
     accent: "#FF3B2F",
     year: "2024",
-    link: "https://www.linkedin.com/in/sai-prasad-kommineni-01aa51168/",
+    link: "https://github.com/prasad7777777J/Gen-AI/tree/main/Data_Analyst_Agent",
     size: "small",
-    badge: "🤖 Deep Learning",
+    badge: "🤖 Autonomous Agent",
   },
   {
     id: "03",
-    title: "AI Agent System",
-    subtitle: "Autonomous Agents · Orchestration",
-    tags: ["Python", "LangGraph", "OpenAI", "FastAPI", "Docker"],
+    title: "E-Commerce Agent",
+    subtitle: "Conversational AI · Retail Automation",
+    tags: ["Python", "LangChain", "OpenAI", "FastAPI", "Tools API"],
     description:
-      "Multi-agent orchestration framework enabling autonomous task decomposition, tool use, and decision-making — NVIDIA certified AI Agent Fundamentals.",
+      "Multi-tool AI agent for e-commerce workflows — handles product search, order tracking, recommendations, and customer queries end-to-end using function-calling and tool orchestration.",
     accent: "#60A5FA",
     year: "2024",
-    link: "https://www.linkedin.com/in/sai-prasad-kommineni-01aa51168/",
+    link: "https://github.com/prasad7777777J/Gen-AI/tree/main/ecommerce_agent",
     size: "small",
-    badge: "🏆 NVIDIA Certified",
+    badge: "🛒 Retail · Tools API",
   },
   {
     id: "04",
-    title: "Analytics Platform",
-    subtitle: "Data Engineering · Cloud",
-    tags: ["Python", "SQL", "AWS SageMaker", "Streamlit", "Airflow"],
+    title: "Falcon 7B + LangChain",
+    subtitle: "LLM Integration · Open Source Models",
+    tags: ["Python", "HuggingFace", "LangChain", "Falcon-7B", "Transformers"],
     description:
-      "Cloud-native analytics platform on AWS processing large-scale datasets with real-time KPI tracking, predictive modelling pipelines, and automated reporting dashboards.",
+      "Production pipeline integrating Falcon-7B open-source LLM with LangChain — enabling custom chains, memory, and retrieval without relying on proprietary APIs, running fully on-premise.",
     accent: "#A78BFA",
-    year: "2023",
-    link: "https://www.linkedin.com/in/sai-prasad-kommineni-01aa51168/",
+    year: "2024",
+    link: "https://github.com/prasad7777777J/Gen-AI/tree/main/Falcon_7B_with_LangChain",
     size: "large",
-    badge: "🚀 AWS Cloud",
+    badge: "🦅 Open Source LLM",
+  },
+  {
+    id: "05",
+    title: "LangChain + Pinecone RAG",
+    subtitle: "Vector Search · Retrieval-Augmented Generation",
+    tags: ["Python", "LangChain", "Pinecone", "OpenAI", "Embeddings"],
+    description:
+      "Semantic search and Q&A system using Pinecone as the vector store — embeds documents, retrieves top-k relevant chunks, and feeds them into an LLM to produce grounded, citation-backed answers.",
+    accent: "#34D399",
+    year: "2024",
+    link: "https://github.com/prasad7777777J/Gen-AI/tree/main/LangChain_with_pinecone",
+    size: "small",
+    badge: "📌 Vector Search · RAG",
+  },
+  {
+    id: "06",
+    title: "ML Algorithms Suite",
+    subtitle: "Machine Learning · End-to-End Pipelines",
+    tags: ["Python", "Scikit-learn", "Pandas", "NumPy", "Matplotlib"],
+    description:
+      "Comprehensive ML project covering Regression, Classification (Random Forest ~98% accuracy), Clustering with 3D animated visualisations, and full data preprocessing pipelines on real-world datasets.",
+    accent: "#F59E0B",
+    year: "2023",
+    link: "https://github.com/prasad7777777J/ML",
+    size: "small",
+    badge: "📊 ML · 98% Accuracy",
   },
 ] as const;
 
@@ -65,9 +91,8 @@ function ProjectCard({ project, index }: { project: typeof PROJECTS[number]; ind
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: index * 0.08 }}
       whileHover="hover"
-      className={`group relative rounded-2xl overflow-hidden glass-card transition-all duration-500 cursor-none ${
-        project.size === "large" ? "md:col-span-2" : ""
-      }`}
+      className={`group relative rounded-2xl overflow-hidden glass-card transition-all duration-500 cursor-none ${project.size === "large" ? "md:col-span-2" : ""
+        }`}
       style={{ minHeight: project.size === "large" ? "400px" : "340px" }}
     >
       {/* Hover glow */}
@@ -138,7 +163,7 @@ function ProjectCard({ project, index }: { project: typeof PROJECTS[number]; ind
           className="group/link flex items-center gap-2 w-fit pointer-events-auto"
           style={{ color: project.accent }}>
           <span className="text-xs tracking-[0.15em] uppercase" style={{ fontFamily: "var(--font-dm-mono)" }}>
-            View Project
+            View on GitHub
           </span>
           <motion.span className="inline-block" variants={{ hover: { x: 4 } }} transition={{ duration: 0.2 }}>→</motion.span>
         </a>
@@ -178,7 +203,7 @@ export default function Projects() {
             className="max-w-xs text-sm leading-relaxed md:text-right"
             style={{ color: "var(--text-secondary)", fontWeight: 300 }}
           >
-            Real-world AI systems — from RAG platforms to fine-tuned LLMs — built with Python, AWS, and cutting-edge tooling.
+            Real-world AI systems — from autonomous agents to NL2SQL dashboards — built with Python, LangChain, and open-source LLMs.
           </motion.p>
         </div>
 
@@ -187,18 +212,18 @@ export default function Projects() {
           {PROJECTS.map((p, i) => <ProjectCard key={p.id} project={p} index={i} />)}
         </div>
 
-        {/* LinkedIn CTA */}
+        {/* GitHub CTA */}
         <motion.div
           initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }} className="flex justify-center mt-14"
         >
-          <a href="https://www.linkedin.com/in/sai-prasad-kommineni-01aa51168/" target="_blank" rel="noopener noreferrer"
+          <a href="https://github.com/prasad7777777J" target="_blank" rel="noopener noreferrer"
             className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full text-sm tracking-widest uppercase overflow-hidden pointer-events-auto"
             style={{ fontFamily: "var(--font-dm-mono)", border: "1px solid rgba(255,255,255,0.12)", color: "var(--text-primary)" }}
           >
             <span className="absolute inset-0 -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out rounded-full"
               style={{ background: "var(--accent-lime)" }} aria-hidden="true" />
-            <span className="relative z-10 group-hover:text-black transition-colors duration-200">View LinkedIn Profile</span>
+            <span className="relative z-10 group-hover:text-black transition-colors duration-200">View All on GitHub</span>
             <span className="relative z-10 group-hover:text-black transition-colors duration-200">→</span>
           </a>
         </motion.div>
